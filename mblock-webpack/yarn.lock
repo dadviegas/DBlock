@@ -1315,9 +1315,9 @@ make-dir@^1.0.0:
   dependencies:
     pify "^2.3.0"
 
-mblock-babel@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/mblock-babel/-/mblock-babel-0.0.3.tgz#c45f60b281ba60c061fd3e0a42cb7461897c792d"
+mblock-babel@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/mblock-babel/-/mblock-babel-0.0.4.tgz#a6f8813690fe1bccaf2c1c509495ab03a60ba896"
   dependencies:
     babel-cli "^6.26.0"
     babel-core "^6.26.0"

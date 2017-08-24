@@ -13,6 +13,6 @@
   "author": "Dadviegas",
   "license": "ISC",
   "dependencies": {
-    "mblock-babel": "^0.0.3"
+    "mblock-babel": "^0.0.4"
   }
 }
