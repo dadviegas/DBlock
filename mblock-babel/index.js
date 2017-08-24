@@ -1,4 +1,4 @@
-module.exports = {
+const defaultWebpackBabelConfiguration = {
   "presets": [
     ["env", {
       "targets": {
@@ -7,4 +7,8 @@ module.exports = {
       "modules": false
     }]
   ]
+}
+
+module.exports =  function (options) {
+  return options || defaultWebpackBabelConfiguration
 }
