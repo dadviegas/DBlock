@@ -11,5 +11,8 @@
     "build"
   ],
   "author": "Dadviegas",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mblock-babel": "^0.0.3"
+  }
 }
