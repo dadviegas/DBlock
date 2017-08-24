@@ -6,5 +6,10 @@
   "license": "ISC",
   "dependencies": {
     "standard": "^10.0.3"
+  },
+  "standard": {
+    "ignore": [
+      "/lib/"
+    ]
   }
 }

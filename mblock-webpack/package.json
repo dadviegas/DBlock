@@ -2,9 +2,9 @@
   "name": "mblock-webpack",
   "version": "0.0.0",
   "description": "webpack builder",
-  "main": "index.js",
+  "main": "lib/",
   "scripts": {
-    "compile": "babel --presets es2015,stage-0 -d lib/ src/",
+    "compile": "babel -d lib/ src/",
     "build": "standard && npm run compile"
   },
   "keywords": [
@@ -14,6 +14,7 @@
   "author": "Dadviegas",
   "license": "ISC",
   "dependencies": {
-    "mblock-babel": "^0.0.4"
+    "mblock-babel": "^0.0.4",
+    "mblock-core": "^0.0.1"
   }
 }
