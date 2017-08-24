@@ -1,7 +1,8 @@
 {
-  "name": "dblock-babel",
+  "name": "mblock-babel",
   "version": "0.0.2",
   "description": "Babel core for projects",
+  "main": "index.js",
   "keywords": [
     "babel"
   ],

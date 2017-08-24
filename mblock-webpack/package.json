@@ -1,0 +1,15 @@
+{
+  "name": "mblock-webpack",
+  "version": "0.0.0",
+  "description": "webpack builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "build"
+  ],
+  "author": "Dadviegas",
+  "license": "ISC"
+}
