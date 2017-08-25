@@ -8,7 +8,7 @@ exports.default = function (options) {
   return options || defaultWebpackBabelConfiguration;
 };
 
-var defaultWebpackBabelConfiguration = {
+const defaultWebpackBabelConfiguration = {
   'presets': [['env', {
     'targets': {
       'browsers': ['last 3 versions']
