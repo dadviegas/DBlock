@@ -2,16 +2,21 @@
   "name": "mblock-babel",
   "version": "0.0.4",
   "description": "Babel core for projects",
-  "main": "index.js",
+  "main": "lib/",
   "keywords": [
     "babel"
   ],
+  "scripts": {
+    "compile": "babel -d lib/ src/",
+    "build": "standard && npm run compile"
+  },
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-stage-0": "^6.24.1",
+    "mblock-core": "^0.0.1"
   },
   "author": "dadviegas",
   "license": "ISC"
