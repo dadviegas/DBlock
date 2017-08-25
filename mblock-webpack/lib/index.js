@@ -1,3 +1,5 @@
 'use strict';
 
-console.log('test');
+require('babel-polyfill');
+
+require('./builder');
