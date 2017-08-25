@@ -16,5 +16,10 @@
   "dependencies": {
     "mblock-babel": "^0.0.4",
     "mblock-core": "^0.0.1"
+  },
+  "standard": {
+    "ignore": [
+      "/lib/"
+    ]
   }
 }
