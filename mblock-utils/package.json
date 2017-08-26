@@ -1,6 +1,6 @@
 {
   "name": "mblock-utils",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "description": "Utils for projects",
   "main": "lib/",
   "keywords": [
@@ -8,8 +8,16 @@
     "pipe"
   ],
   "scripts": {
+    "clean-lib": "rimraf ./lib",
+    "copypackage": "cp -rf package.json lib",
     "compile": "babel -d lib/ src/",
-    "build": "standard && npm run compile"
+    "build": "standard && npm run compile",
+    "publish:npm": "npm run copypackage && cd lib && npm publish",
+    "preversion": "npm run clean-lib && npm run build && git add -fA lib",
+    "version:patch": "npm version patch -m \"Bump mblock-utils to v%s\"",
+    "version:minor": "npm version minor -m-m \"Bump mblock-utils to v%s\"",
+    "version:major": "npm version major -m-m \"Bump mblock-utils to v%s\"",
+    "postversion": "git push && git push --tags && npm run publish:npm && npm run clean-lib"
   },
   "dependencies": {
     "mblock-babel": "latest"

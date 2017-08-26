@@ -1,3 +1,3 @@
-import compose from 'mblock-core/lib/compose'
+import compose from 'mblock-utils/compose'
 
 console.log(compose)

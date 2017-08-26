@@ -1,6 +1,6 @@
 'use strict';
 
-var _compose = require('mblock-core/lib/compose');
+var _compose = require('mblock-utils/compose');
 
 var _compose2 = _interopRequireDefault(_compose);
 
