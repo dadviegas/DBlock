@@ -1,5 +1,7 @@
-import webpackPackage from 'webpack'
-import mergePackage from 'webpack-merge'
+import webpack from 'webpack'
+import merge from 'webpack-merge'
 
-export const webpack = webpackPackage
-export const merge = mergePackage
+export default {
+  webpack,
+  merge
+}
