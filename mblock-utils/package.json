@@ -2,7 +2,7 @@
   "name": "mblock-utils",
   "version": "0.0.0",
   "description": "Utils for projects",
-  "main": "lib/",
+  "main": "./lib/",
   "keywords": [
     "compose",
     "pipe"
