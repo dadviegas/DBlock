@@ -1,16 +1,11 @@
 {
   "name": "mblock-core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "mblock core library",
   "author": "dadvidgas",
   "license": "ISC",
   "main": "lib/",
   "dependencies": {
     "standard": "^10.0.3"
-  },
-  "standard": {
-    "ignore": [
-      "/lib/"
-    ]
   }
 }
