@@ -1,0 +1,24 @@
+{
+  "name": "mblock-utils",
+  "version": "0.0.0",
+  "description": "Utils for projects",
+  "main": "lib/",
+  "keywords": [
+    "compose",
+    "pipe"
+  ],
+  "scripts": {
+    "compile": "babel -d lib/ src/",
+    "build": "standard && npm run compile"
+  },
+  "dependencies": {
+    "mblock-babel": "latest"
+  },
+  "author": "dadviegas",
+  "license": "ISC",
+  "standard": {
+    "ignore": [
+      "/lib/"
+    ]
+  }
+}
