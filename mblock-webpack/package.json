@@ -16,7 +16,8 @@
   "dependencies": {
     "mblock-babel": "latest",
     "mblock-core": "latest",
-    "webpack": "^3.5.5"
+    "webpack": "^3.5.5",
+    "webpack-merge": "^4.1.0"
   },
   "standard": {
     "ignore": [
