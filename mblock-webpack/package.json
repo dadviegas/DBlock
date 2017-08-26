@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "mblock-babel": "latest",
-    "mblock-core": "latest",
+    "mblock-utils": "latest",
     "webpack": "^3.5.5",
     "webpack-merge": "^4.1.0"
   },
