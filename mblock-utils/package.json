@@ -1,6 +1,6 @@
 {
   "name": "mblock-utils",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Utils for projects",
   "keywords": [
     "compose",
@@ -10,8 +10,6 @@
     "compile": "babel -d lib/ src/",
     "build": "npm run clean-lib && standard && npm run compile",
     "clean-lib": "rimraf ./lib",
-    "copypackage": "cp -rf package.json lib",
-    "publish:npm": "npm run build && npm run copypackage && cd lib && npm publish",
     "install": "npm run compile"
   },
   "dependencies": {

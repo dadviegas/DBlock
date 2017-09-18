@@ -1,18 +1,20 @@
 import module from '../module'
 
-const defaultBabel = (options) => module({
-  test: /\.js$/,
-  exclude: /node_modules/,
-  use: {
-    loader: 'babel-loader',
-    options: {
-      presets: ['env', 'stage-0']
-    }
-  },
-  ...options
+const defaultBabel = (options = {}) => module({
+  rules: {
+    test: /\.js$/,
+    exclude: /node_modules/,
+    use: {
+      loader: 'babel-loader',
+      options: {
+        presets: ['env', 'stage-0', { modules: false }]
+      }
+    },
+    ...options
+  }
 })
 
-export default (options = {}) => setup => {
+export default (options = {}) => (setup = {}) => {
   const gen = defaultBabel(options)
   const babelOptions = gen(setup)
 

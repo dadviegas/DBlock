@@ -1,14 +1,12 @@
-const moduleRule = (rule = {}) => ({
+const moduleOptions = (options) => ({
   module: {
-    rules: [
-      rule
-    ]
+    ...options
   }
 })
 
-export default (options) => (setup) => {
-  const moduleRules = moduleRule(options)
+export default (options) => (setup = {}) => {
+  const module = moduleOptions(options)
 
-  setup.options = setup.modules.merge(setup.options, moduleRules)
+  setup.options = setup.modules.merge(setup.options, module)
   return setup
 }

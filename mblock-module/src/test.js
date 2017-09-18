@@ -1,7 +1,7 @@
 // Added to support async
 import 'babel-polyfill'
 import { use, build, configuration } from './index'
-import { babel, setting, entry, output } from 'mblock-module/plugins'
+import { babel, entry, output, alias, enviromnent } from './plugins'
 
 use(
   babel(),
@@ -10,11 +10,10 @@ use(
   }),
   output({
     filename: '[name].js'
-  })
+  }),
+  enviromnent()
 )
-
-use(setting({resolve: {}}))
-use(setting({asd: {}}))
+use(alias({'module': 'modulePath'}))
 
 configuration({
   entry: {
@@ -23,6 +22,6 @@ configuration({
   }
 })
 
-const conf = build({env: 'development'})
+const conf = build({ env: 'development' })
 
-console.log(conf)
+console.log(conf.options)

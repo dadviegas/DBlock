@@ -1,6 +1,6 @@
 {
   "name": "mblock-module",
-  "version": "0.0.1",
+  "version": "0.0.9",
   "description": "create modules throught mblock-webpack",
   "scripts": {
     "compile": "babel -d lib/ src/",
@@ -8,8 +8,7 @@
     "exec": "clear && npm run compile && node lib",
     "build": "npm run clean-lib && standard && npm run compile",
     "clean-lib": "rimraf ./lib",
-    "copypackage": "cp -rf package.json lib",
-    "publish:npm": "npm run build && npm run copypackage && cd lib && npm publish"
+    "install": "npm run compile"
   },
   "author": "dadviegas",
   "license": "ISC",

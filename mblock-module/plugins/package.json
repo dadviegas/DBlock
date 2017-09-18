@@ -1,0 +1,5 @@
+{
+  "name": "mblock-module/plugins",
+  "private": true,
+  "main": "../lib/plugins/index.js"
+}

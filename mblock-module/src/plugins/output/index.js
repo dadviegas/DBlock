@@ -3,7 +3,7 @@ const defaultOutput = {
   filename: '[name].js'
 }
 
-export default (options = defaultOutput) => setup => {
+export default (options = defaultOutput) => (setup = {}) => {
   const _options = {
     output: {
       ...options
