@@ -1,6 +1,6 @@
 {
   "name": "mblock-webpack",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "webpack builder",
   "scripts": {
     "compile": "babel -d lib/ src/",
