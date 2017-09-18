@@ -1,6 +1,6 @@
 {
   "name": "mblock-module",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "create modules throught mblock-webpack",
   "scripts": {
     "compile": "babel -d lib/ src/",
