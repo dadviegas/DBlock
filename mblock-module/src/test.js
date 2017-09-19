@@ -2,7 +2,7 @@
 import 'babel-polyfill'
 import { use, build, configuration } from './index'
 import { babel, entry, output, alias, enviromnent } from './plugins'
-import asd from 'mblock-utils'
+
 use(
   babel(),
   entry({
