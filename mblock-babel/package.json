@@ -1,6 +1,6 @@
 {
   "name": "mblock-babel",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Babel core for projects",
   "main": "lib/",
   "keywords": [
