@@ -1,5 +1,6 @@
 const resolveOptions = (options = {}) => ({
   resolve: {
+    modules: ['node_modules'],
     extensions: ['.js', '.jsx'],
     ...options
   }

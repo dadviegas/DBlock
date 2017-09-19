@@ -7,8 +7,8 @@
     "clean-lib": "rimraf ./lib",
     "prebuild": "npm run clean-lib",
     "build": "standard && webpack --display-error-details",
-    "build:qa": "npm run build -- --env.environment=qa",
-    "build:production": "npm run build -- --env.environment=production",
+    "build:qa": "npm run build -- --env.NODE_ENV=qa",
+    "build:production": "npm run build -- --env.NODE_ENV=production",
     "postbuild": "node lib"
   },
   "author": "dadviegas",

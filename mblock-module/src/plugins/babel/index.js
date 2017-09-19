@@ -1,20 +1,12 @@
-import module from '../module'
+import rule from '../module/rules'
 
-const defaultBabel = (options = {}) => module({
-  rules: [{
-    test: /\.js$/,
-    exclude: /node_modules/,
-    use: {
-      loader: 'babel-loader',
-      options: {
-        presets: [['env', {
-          'modules': false,
-          'loose': true
-        }], 'stage-0']
-      }
-    },
-    ...options
-  }]
+const defaultBabel = (options = {}) => rule({
+  test: /\.js$/,
+  exclude: /node_modules/,
+  use: {
+    loader: 'babel-loader'
+  },
+  ...options
 })
 
 export default (options = {}) => (setup = {}) => {
