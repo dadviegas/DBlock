@@ -7,7 +7,7 @@ import configurationSetup from './configuration'
 export const setupBuild = (options) => ({
   options: {
     resolve: {},
-    modules: {
+    module: {
       rules: []
     }
   },

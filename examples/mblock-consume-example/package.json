@@ -1,0 +1,20 @@
+{
+  "name": "mblock-consume-example",
+  "version": "0.0.0",
+  "description": "consume ",
+  "main": "index.js",
+  "scripts": {
+    "clean-lib": "rimraf ./lib",
+    "prebuild": "npm run clean-lib",
+    "build": "standard && webpack --display-error-details",
+    "build:qa": "npm run build -- --env.environment=qa",
+    "build:production": "npm run build -- --env.environment=production",
+    "postbuild": "node lib"
+  },
+  "author": "dadviegas",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^5.0.5",
+    "mblock-module": "latest"
+  }
+}

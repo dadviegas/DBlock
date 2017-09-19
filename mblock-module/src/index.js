@@ -1,1 +1,1 @@
-export { use, build, configuration } from 'mblock-webpack'
+export * from 'mblock-webpack'

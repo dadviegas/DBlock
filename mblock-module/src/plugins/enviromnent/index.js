@@ -8,7 +8,7 @@ export default (options = {}) => (setup = {}) => {
     new webpack.NoEmitOnErrorsPlugin(),
     new setup.plugins.CaseSensitivePlugin(),
     new webpack.EnvironmentPlugin({
-      NODE_ENV: 'development', // use 'development' unless process.env.NODE_ENV is defined
+      NODE_ENV: setup.configuration.environment, // use 'development' unless process.env.NODE_ENV is defined
       DEBUG: false,
       ...options
     })

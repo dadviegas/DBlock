@@ -1,5 +1,5 @@
 {
-    "name": "mblock-utils/compose",
-    "private": true,
-    "main": "../lib/compose/index.js"
-  }
+  "name": "mblock-utils/compose",
+  "private": true,
+  "main": "../lib/compose/index.js"
+}

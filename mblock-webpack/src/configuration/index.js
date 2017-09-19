@@ -1,3 +1,7 @@
 export default (options = {}) => {
-  return { ...options }
+  const setup = options.env || {}
+  return {
+    environment: 'development',
+    ...setup
+  }
 }
