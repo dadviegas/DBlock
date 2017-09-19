@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "test building modules ",
   "main": "lib/index.js",
-  "module": "es/index.js",
+  "module": "src/index.js",
   "scripts": {
     "clean-lib": "rimraf ./lib ./es",
     "prebuild": "npm run clean-lib",

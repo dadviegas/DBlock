@@ -10,3 +10,5 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 log('this is =>', process.env.NODE_ENV)
+
+log('src')

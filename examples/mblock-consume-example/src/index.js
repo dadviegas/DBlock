@@ -1,3 +1,3 @@
-import {multiply, log} from './module'
+import { multiply, log } from 'mblock-utils-example'
 
-log(multiply(1, 2))
+log('multiply', multiply(2, 3))

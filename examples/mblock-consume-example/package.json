@@ -1,7 +1,7 @@
 {
   "name": "mblock-consume-example",
   "version": "0.0.0",
-  "description": "consume ",
+  "description": "consume",
   "main": "index.js",
   "scripts": {
     "clean-lib": "rimraf ./lib",

@@ -1,6 +1,6 @@
 import { join } from 'path'
 import { use, build } from 'mblock-module'
-import { babel, entry, output, enviromnent } from 'mblock-module/plugins'
+import { babel, entry, output, enviromnent, resolve } from 'mblock-module/plugins'
 
 use(
   babel(),
@@ -11,7 +11,8 @@ use(
     path: join(__dirname, 'lib'),
     filename: '[name].js'
   }),
-  enviromnent()
+  enviromnent(),
+  resolve({mainFields: ['module', 'main']})
 )
 
 export default (env) => {
