@@ -9,7 +9,8 @@ export const setupBuild = (options) => ({
     resolve: {},
     module: {
       rules: []
-    }
+    },
+    stats: 'normal'
   },
   configuration: configurationSetup(options),
   modules,

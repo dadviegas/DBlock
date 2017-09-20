@@ -1,5 +1,3 @@
 {
-  "presets": ["es2015-node", "stage-0"],
-  "plugins": ["syntax-async-functions", "transform-regenerator"]
+  "presets": ["env", "stage-0"]
 }
-

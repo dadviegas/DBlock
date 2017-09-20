@@ -7,12 +7,12 @@
   "scripts": {
     "clean-lib": "rimraf ./lib ./es",
     "prebuild": "npm run clean-lib",
-    "build": "standard && webpack",
-    "build:qa": "npm run build -- --env.NODE_ENV=qa",
-    "build:production": "npm run build -- --env.NODE_ENV=production",
+    "build": "cross-env NODE_ENV=development standard && webpack -p",
+    "build:qa": "cross-env NODE_ENV=qa npm run build -- --env.NODE_ENV=qa",
+    "build:production": "cross-env NODE_ENV=production npm run build -- --env.NODE_ENV=production",
     "build:es": "cross-env BABEL_ENV=es babel --no-babelrc src --out-dir es",
     "postbuild": "node lib",
-    "install": "npm run build:es && npm run build:production"
+    "install": "npm run build:production"
   },
   "author": "dadviegas",
   "license": "ISC",
