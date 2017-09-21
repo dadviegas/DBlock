@@ -2,5 +2,16 @@
   "presets": [["env", {
     "modules": false,
     "loose": true
-  }], "stage-0"]
+  }], "stage-0"],
+  "env": {
+    "development": {
+      "plugins": []
+    },
+    "production": {
+      "plugins": []
+    },
+    "test": {
+      "plugins": []
+    }
+  }
 }

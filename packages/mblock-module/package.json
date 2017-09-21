@@ -9,8 +9,7 @@
     "start": "babel -d lib/ src/ -w",
     "exec": "clear && npm run compile && node lib",
     "build": "npm run clean-lib && standard && npm run compile",
-    "clean-lib": "rimraf ./lib",
-    "install": "npm run compile"
+    "clean-lib": "rimraf ./lib"
   },
   "author": "dadviegas",
   "license": "ISC",

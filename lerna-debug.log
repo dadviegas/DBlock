@@ -1,0 +1,75 @@
+0 silly input [ 'build' ]
+1 silly flags { _: [ 'run' ], script: 'build', args: [] }
+2 verbose rootPath /Users/davidviegas/learn/mblock
+3 info version 2.2.0
+4 silly existsSync /Users/davidviegas/learn/mblock/VERSION
+5 silly initialize attempt
+6 silly initialize success
+7 silly execute attempt
+8 silly runScriptInDir build [] mblock-babel
+9 silly getExecOpts { cwd: '/Users/davidviegas/learn/mblock/packages/mblock-babel' }
+10 silly runScriptInDir build [] mblock-module
+11 silly getExecOpts { cwd: '/Users/davidviegas/learn/mblock/packages/mblock-module' }
+12 silly runScriptInDir build [] mblock-utils
+13 silly getExecOpts { cwd: '/Users/davidviegas/learn/mblock/packages/mblock-utils' }
+14 silly runScriptInDir build [] mblock-webpack
+15 silly getExecOpts { cwd: '/Users/davidviegas/learn/mblock/packages/mblock-webpack' }
+16 error build Errored while running script in 'mblock-utils'
+17 error execute Error: Command failed: npm run build
+17 error execute standard: Use JavaScript Standard Style (https://standardjs.com)
+17 error execute npm ERR! code ELIFECYCLE
+17 error execute npm ERR! errno 1
+17 error execute npm ERR! mblock-utils@0.0.17 build: `npm run clean-lib && standard && npm run compile`
+17 error execute npm ERR! Exit status 1
+17 error execute npm ERR!
+17 error execute npm ERR! Failed at the mblock-utils@0.0.17 build script.
+17 error execute npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+17 error execute
+17 error execute npm ERR! A complete log of this run can be found in:
+17 error execute npm ERR!     /Users/davidviegas/.npm/_logs/2017-09-21T16_57_13_314Z-debug.log
+17 error execute
+17 error execute > mblock-utils@0.0.17 build /Users/davidviegas/learn/mblock/packages/mblock-utils
+17 error execute > npm run clean-lib && standard && npm run compile
+17 error execute
+17 error execute
+17 error execute > mblock-utils@0.0.17 clean-lib /Users/davidviegas/learn/mblock/packages/mblock-utils
+17 error execute > rimraf ./lib
+17 error execute
+17 error execute   /Users/davidviegas/learn/mblock/packages/mblock-utils/src/notification/index.js:4:34: 'args' is not defined.
+17 error execute
+17 error execute     at Promise.all.then.arr (/Users/davidviegas/learn/mblock/node_modules/execa/index.js:236:11)
+17 error execute     at process._tickCallback (internal/process/next_tick.js:103:7)
+17 error execute  callback with error
+17 error execute  { Error: Command failed: npm run build
+17 error execute standard: Use JavaScript Standard Style (https://standardjs.com)
+17 error execute npm ERR! code ELIFECYCLE
+17 error execute npm ERR! errno 1
+17 error execute npm ERR! mblock-utils@0.0.17 build: `npm run clean-lib && standard && npm run compile`
+17 error execute npm ERR! Exit status 1
+17 error execute npm ERR!
+17 error execute npm ERR! Failed at the mblock-utils@0.0.17 build script.
+17 error execute npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+17 error execute
+17 error execute npm ERR! A complete log of this run can be found in:
+17 error execute npm ERR!     /Users/davidviegas/.npm/_logs/2017-09-21T16_57_13_314Z-debug.log
+17 error execute
+17 error execute > mblock-utils@0.0.17 build /Users/davidviegas/learn/mblock/packages/mblock-utils
+17 error execute > npm run clean-lib && standard && npm run compile
+17 error execute
+17 error execute
+17 error execute > mblock-utils@0.0.17 clean-lib /Users/davidviegas/learn/mblock/packages/mblock-utils
+17 error execute > rimraf ./lib
+17 error execute
+17 error execute   /Users/davidviegas/learn/mblock/packages/mblock-utils/src/notification/index.js:4:34: 'args' is not defined.
+17 error execute
+17 error execute     at Promise.all.then.arr (/Users/davidviegas/learn/mblock/node_modules/execa/index.js:236:11)
+17 error execute     at process._tickCallback (internal/process/next_tick.js:103:7)
+17 error execute   stack: 'Error: Command failed: npm run build\nstandard: Use JavaScript Standard Style (https://standardjs.com)\nnpm ERR! code ELIFECYCLE\nnpm ERR! errno 1\nnpm ERR! mblock-utils@0.0.17 build: `npm run clean-lib && standard && npm run compile`\nnpm ERR! Exit status 1\nnpm ERR! \nnpm ERR! Failed at the mblock-utils@0.0.17 build script.\nnpm ERR! This is probably not a problem with npm. There is likely additional logging output above.\n\nnpm ERR! A complete log of this run can be found in:\nnpm ERR!     /Users/davidviegas/.npm/_logs/2017-09-21T16_57_13_314Z-debug.log\n\n> mblock-utils@0.0.17 build /Users/davidviegas/learn/mblock/packages/mblock-utils\n> npm run clean-lib && standard && npm run compile\n\n\n> mblock-utils@0.0.17 clean-lib /Users/davidviegas/learn/mblock/packages/mblock-utils\n> rimraf ./lib\n\n  /Users/davidviegas/learn/mblock/packages/mblock-utils/src/notification/index.js:4:34: \'args\' is not defined.\n\n    at Promise.all.then.arr (/Users/davidviegas/learn/mblock/node_modules/execa/index.js:236:11)\n    at process._tickCallback (internal/process/next_tick.js:103:7)',
+17 error execute   code: 1,
+17 error execute   killed: false,
+17 error execute   stdout: '\n> mblock-utils@0.0.17 build /Users/davidviegas/learn/mblock/packages/mblock-utils\n> npm run clean-lib && standard && npm run compile\n\n\n> mblock-utils@0.0.17 clean-lib /Users/davidviegas/learn/mblock/packages/mblock-utils\n> rimraf ./lib\n\n  /Users/davidviegas/learn/mblock/packages/mblock-utils/src/notification/index.js:4:34: \'args\' is not defined.\n',
+17 error execute   stderr: 'standard: Use JavaScript Standard Style (https://standardjs.com)\nnpm ERR! code ELIFECYCLE\nnpm ERR! errno 1\nnpm ERR! mblock-utils@0.0.17 build: `npm run clean-lib && standard && npm run compile`\nnpm ERR! Exit status 1\nnpm ERR! \nnpm ERR! Failed at the mblock-utils@0.0.17 build script.\nnpm ERR! This is probably not a problem with npm. There is likely additional logging output above.\n\nnpm ERR! A complete log of this run can be found in:\nnpm ERR!     /Users/davidviegas/.npm/_logs/2017-09-21T16_57_13_314Z-debug.log\n',
+17 error execute   failed: true,
+17 error execute   signal: null,
+17 error execute   cmd: 'npm run build',
+17 error execute   timedOut: false }

@@ -9,8 +9,7 @@
   "scripts": {
     "compile": "babel -d lib/ src/",
     "build": "npm run clean-lib && standard && npm run compile",
-    "clean-lib": "rimraf ./lib",
-    "install": "npm run compile"
+    "clean-lib": "rimraf ./lib"
   },
   "dependencies": {
     "mblock-babel": "latest"

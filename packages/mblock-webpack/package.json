@@ -7,8 +7,7 @@
     "compile": "babel -d lib/ src/",
     "start": "babel -d lib/ src/ -w",
     "build": "npm run clean-lib && standard && npm run compile",
-    "clean-lib": "rimraf ./lib",
-    "install": "npm run compile"
+    "clean-lib": "rimraf ./lib"
   },
   "keywords": [
     "webpack",
