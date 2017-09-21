@@ -12,7 +12,7 @@
     "clean-lib": "rimraf ./lib"
   },
   "dependencies": {
-    "mblock-babel": "latest"
+    "mblock-babel": "0.1.0"
   },
   "author": "dadviegas",
   "license": "ISC",
