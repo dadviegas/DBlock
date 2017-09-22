@@ -1,6 +1,6 @@
 {
   "name": "mblock-utils",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Utils for projects",
   "keywords": [
     "compose",
@@ -14,7 +14,7 @@
   "dependencies": {
     "chalk": "^2.1.0",
     "cross-env": "^5.0.5",
-    "mblock-babel": "^0.1.1",
+    "mblock-babel": "^0.1.2",
     "rimraf": "^2.6.2"
   },
   "author": "dadviegas",
