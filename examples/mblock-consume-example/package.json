@@ -13,7 +13,6 @@
   "author": "dadviegas",
   "license": "ISC",
   "dependencies": {
-    "cross-env": "^5.0.5",
     "mblock-module": "latest"
   }
 }
