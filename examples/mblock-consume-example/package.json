@@ -4,16 +4,16 @@
   "description": "consume",
   "main": "index.js",
   "scripts": {
-    "prepare": "npm install ../mblock-utils-example/",
     "clean-lib": "rimraf ./lib",
     "prebuild": "npm run clean-lib",
-    "build": "npm run prepare && standard && webpack --display-error-details",
+    "build": "standard && webpack --display-error-details",
     "build:production": "cross-env NODE_ENV=production npm run build -- --env.test"
   },
   "private": true,
   "author": "dadviegas",
   "license": "ISC",
   "dependencies": {
-    "mblock-module": "latest"
+    "mblock-module": "latest",
+    "mblock-utils-example": "0.0.1"
   }
 }
