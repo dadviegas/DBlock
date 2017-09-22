@@ -1,6 +1,6 @@
 {
   "name": "mblock-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Utils for projects",
   "keywords": [
     "compose",
@@ -12,7 +12,10 @@
     "clean-lib": "rimraf ./lib"
   },
   "dependencies": {
-    "mblock-babel": "0.1.0"
+    "chalk": "^2.1.0",
+    "cross-env": "^5.0.5",
+    "mblock-babel": "^0.1.1",
+    "rimraf": "^2.6.2"
   },
   "author": "dadviegas",
   "license": "ISC",
