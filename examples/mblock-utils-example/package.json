@@ -1,6 +1,6 @@
 {
   "name": "mblock-utils-example",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "test building modules ",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -12,6 +12,7 @@
     "build:es": "cross-env BABEL_ENV=es babel --no-babelrc src --out-dir es",
     "postbuild": "node lib"
   },
+  "private": true,
   "author": "dadviegas",
   "license": "ISC",
   "dependencies": {

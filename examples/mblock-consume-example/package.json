@@ -1,6 +1,6 @@
 {
   "name": "mblock-consume-example",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "consume",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,11 @@
     "build:production": "cross-env NODE_ENV=production npm run build -- --env.test",
     "postbuild": "node lib"
   },
+  "private": true,
   "author": "dadviegas",
   "license": "ISC",
   "dependencies": {
-    "mblock-module": "latest"
+    "mblock-module": "latest",
+    "mblock-utils-example": "latest"
   }
 }

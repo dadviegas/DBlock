@@ -1,17 +1,13 @@
 {
   "name": "mblock-babel",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Babel core for projects",
   "main": "lib/",
   "keywords": [
     "babel"
   ],
   "scripts": {
-<<<<<<< HEAD
-    "build": "echo \"=> mblock-babel no build require \""
-=======
-    "build": "echo \"=> mblock-babel no build required\""
->>>>>>> 41577ea... Add lerna as package manager
+    "build": "echo \"mblock-babel no build required\""
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
