@@ -1,5 +1,0 @@
-{
-  "name": "mblock-utils/compose",
-  "private": true,
-  "main": "../lib/compose/index.js"
-}

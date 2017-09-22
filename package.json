@@ -1,0 +1,34 @@
+{
+  "name": "mblock",
+  "version": "0.0.0",
+  "description": "mblock monorepo",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "init": "lerna init",
+    "build": "lerna run build",
+    "bootstrap": "lerna bootstrap",
+    "bootstrap:hoist": "lerna bootstrap --hoist",
+    "clean": "lerna clean && rm -rf node_modules",
+    "clean:packages": "lerna clean && rm -rf node_modules",
+    "publish": "npm run build && lerna publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dadviegas/mBlock.git"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "dadviegas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dadviegas/mBlock/issues"
+  },
+  "homepage": "https://github.com/dadviegas/mBlock#readme",
+  "dependencies": {
+    "lerna": "^2.2.0"
+  }
+}

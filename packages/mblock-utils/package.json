@@ -1,6 +1,6 @@
 {
   "name": "mblock-utils",
-  "version": "0.0.17",
+  "version": "0.1.2",
   "description": "Utils for projects",
   "keywords": [
     "compose",
@@ -9,11 +9,13 @@
   "scripts": {
     "compile": "babel -d lib/ src/",
     "build": "npm run clean-lib && standard && npm run compile",
-    "clean-lib": "rimraf ./lib",
-    "install": "npm run compile"
+    "clean-lib": "rimraf ./lib"
   },
   "dependencies": {
-    "mblock-babel": "latest"
+    "chalk": "^2.1.0",
+    "cross-env": "^5.0.5",
+    "mblock-babel": "^0.1.2",
+    "rimraf": "^2.6.2"
   },
   "author": "dadviegas",
   "license": "ISC",

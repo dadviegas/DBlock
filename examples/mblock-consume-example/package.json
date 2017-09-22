@@ -7,14 +7,12 @@
     "clean-lib": "rimraf ./lib",
     "prebuild": "npm run clean-lib",
     "build": "standard && webpack --display-error-details",
-    "build:qa": "cross-env NODE_ENV=qa npm run build -- --env.test",
     "build:production": "cross-env NODE_ENV=production npm run build -- --env.test",
     "postbuild": "node lib"
   },
   "author": "dadviegas",
   "license": "ISC",
   "dependencies": {
-    "cross-env": "^5.0.5",
     "mblock-module": "latest"
   }
 }

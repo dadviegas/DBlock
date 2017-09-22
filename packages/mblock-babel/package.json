@@ -1,0 +1,25 @@
+{
+  "name": "mblock-babel",
+  "version": "0.1.2",
+  "description": "Babel core for projects",
+  "main": "lib/",
+  "keywords": [
+    "babel"
+  ],
+  "scripts": {
+<<<<<<< HEAD
+    "build": "echo \"=> mblock-babel no build require \""
+=======
+    "build": "echo \"=> mblock-babel no build required\""
+>>>>>>> 41577ea... Add lerna as package manager
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "author": "dadviegas",
+  "license": "ISC"
+}
