@@ -1,6 +1,6 @@
 {
   "name": "mblock-webpack",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "webpack builder",
   "main": "./lib/index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "dependencies": {
     "babel-loader": "^7.1.2",
     "case-sensitive-paths-webpack-plugin": "^2.1.1",
-    "mblock-utils": "^0.1.3",
+    "mblock-utils": "^0.1.4",
     "webpack": "^3.6.0",
     "webpack-merge": "^4.1.0"
   },
