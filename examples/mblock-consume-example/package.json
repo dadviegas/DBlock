@@ -13,7 +13,7 @@
   "author": "dadviegas",
   "license": "ISC",
   "dependencies": {
-    "mblock-module": "latest",
+    "mblock-module": "0.1.4",
     "mblock-utils-example": "0.0.1"
   }
 }
