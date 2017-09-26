@@ -1,5 +1,4 @@
 const defaultOutput = {
-  path: 'lib',
   filename: '[name].js'
 }
 

@@ -1,0 +1,11 @@
+{
+  "name": "mblock-redux",
+  "version": "0.0.0",
+  "description": "module to handle redux build",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"mblock-redux not implemented\""
+  },
+  "author": "dadviegas",
+  "license": "ISC"
+}

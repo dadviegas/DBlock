@@ -1,9 +1,4 @@
-const defaultValue = {
-  path: 'lib',
-  filename: '[name].js'
-}
-
-export default (options = defaultValue) => (setup = {}) => {
+export default (options = {}) => (setup = {}) => {
   const _options = {
     entry: {
       ...options

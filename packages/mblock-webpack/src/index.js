@@ -4,14 +4,22 @@ import modules from './modules'
 import plugins from './plugins'
 import configurationSetup from './configuration'
 
-export const setupBuild = (options) => ({
-  options: {
-    resolve: {},
-    module: {
-      rules: []
-    },
-    stats: 'normal'
+const isProduction = process.env.production === true
+
+const baseWebpackOption = {
+  devtool: (() => {
+    if (isProduction) return 'hidden-source-map'
+    else return 'cheap-module-eval-source-map'
+  })(),
+  resolve: {},
+  module: {
+    rules: []
   },
+  stats: 'normal'
+}
+
+export const setupBuild = (options) => ({
+  options: baseWebpackOption,
   configuration: configurationSetup(options),
   modules,
   plugins
@@ -32,7 +40,7 @@ export const configuration = (options = {}) => {
 export const use = (...obj) => Array.prototype.push.apply(pluginsList, obj)
 
 export const build = (options) => {
-  configurationOptions && pluginsList.unshift(configurationOptions)
+  configurationOptions && pluginsList.push(configurationOptions)
   pluginsList.unshift(getWebpackConfiguration)
   return compose(...pluginsList, setupBuild)(options)
 }
