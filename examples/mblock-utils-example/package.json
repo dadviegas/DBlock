@@ -1,6 +1,6 @@
 {
   "name": "mblock-utils-example",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "test building modules ",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -16,7 +16,7 @@
   "author": "dadviegas",
   "license": "ISC",
   "dependencies": {
-    "mblock-module": "^0.1.6"
+    "mblock-module": "^0.1.7"
   },
   "standard": {
     "ignore": [
