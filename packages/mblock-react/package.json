@@ -1,6 +1,6 @@
 {
   "name": "mblock-react",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "module to handle react builds",
   "main": "index.js",
   "scripts": {
