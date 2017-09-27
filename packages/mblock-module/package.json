@@ -1,6 +1,6 @@
 {
   "name": "mblock-module",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "create modules throught mblock-webpack",
   "main": "lib/index.js",
   "module": "src/index.js",
