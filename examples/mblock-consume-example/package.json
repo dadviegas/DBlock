@@ -1,6 +1,6 @@
 {
   "name": "mblock-consume-example",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "consume",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "author": "dadviegas",
   "license": "ISC",
   "dependencies": {
-    "mblock-module": "^0.1.17",
-    "mblock-utils-example": "^0.0.14"
+    "mblock-module": "^0.1.18",
+    "mblock-utils-example": "^0.0.15"
   }
 }
