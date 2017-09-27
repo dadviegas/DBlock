@@ -7,6 +7,12 @@ import aliasPlugin from './alias'
 import resolvePlugin from './resolve'
 import enviromnentPlugin from './enviromnent'
 
+import uglifyPlugin from './uglify'
+import extractCssPlugin from './extractCss'
+import commonsChunkPlugin from './commonsChunk'
+import htmlPlugin from './html'
+import filePlugin from './file'
+
 export const babel = babelPlugin
 export const entry = entryPlugin
 export const output = outputPlugin
@@ -15,3 +21,9 @@ export const alias = aliasPlugin
 export const enviromnent = enviromnentPlugin
 export const resolve = resolvePlugin
 export const moduleRules = moduleRule
+
+export const uglify = uglifyPlugin
+export const extractCss = extractCssPlugin
+export const commonsChunk = commonsChunkPlugin
+export const html = htmlPlugin
+export const file = filePlugin

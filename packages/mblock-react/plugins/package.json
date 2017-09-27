@@ -1,0 +1,5 @@
+{
+  "name": "mblock-react/plugins",
+  "private": true,
+  "main": "../lib/plugins/index.js"
+}
