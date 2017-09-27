@@ -4,13 +4,10 @@ import modules from './modules'
 import plugins from './plugins'
 import configurationSetup from './configuration'
 
-const isProduction = process.env.production === true
+const isProduction = process.env.NODE_ENV === 'production'
 
 const baseWebpackOption = {
-  devtool: (() => {
-    if (isProduction) return 'hidden-source-map'
-    else return 'cheap-module-eval-source-map'
-  })(),
+  devtool: isProduction ? 'source-map' : 'cheap-module-source-map',
   resolve: {},
   module: {
     rules: []

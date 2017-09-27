@@ -8,7 +8,7 @@ export default (options = {}) => (setup = {}) => {
   const pluginsList = [
     new webpack.NoEmitOnErrorsPlugin(),
     new setup.plugins.CaseSensitivePlugin(),
-    new webpack.optimize.ModuleConcatenationPlugin(),
+    // new webpack.optimize.ModuleConcatenationPlugin(),
     new webpack.EnvironmentPlugin({
       NODE_ENV: environment || 'development', // use 'development' unless process.env.NODE_ENV is defined
       DEBUG: environment === 'development',
@@ -22,6 +22,12 @@ export default (options = {}) => (setup = {}) => {
       uglifyOptions: {
         ie8: false,
         mangle: true
+      }
+    }))
+
+    pluginsList.push(new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify(environment)
       }
     }))
   }
