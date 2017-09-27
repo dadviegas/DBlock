@@ -4,7 +4,7 @@ import plugins from '../plugins'
 export default (options = {}) => (setup = {}) => {
   const {webpack} = setup.modules
   const environment = process.env.NODE_ENV
-
+  console.log('using environment', environment)
   const pluginsList = [
     new webpack.NoEmitOnErrorsPlugin(),
     new setup.plugins.CaseSensitivePlugin(),
@@ -18,11 +18,7 @@ export default (options = {}) => (setup = {}) => {
 
   if (environment === 'production') {
     pluginsList.push(new webpack.optimize.UglifyJsPlugin({
-      parallel: {
-        cache: true,
-        workers: 3
-      },
-      sourceMap: true,
+      sourceMap: false,
       uglifyOptions: {
         ie8: false,
         mangle: true
