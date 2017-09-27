@@ -1,6 +1,6 @@
 {
   "name": "mblock-webpack",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "webpack builder",
   "main": "./lib/index.js",
   "scripts": {
