@@ -1,17 +1,16 @@
-import { entry } from 'mblock-module/plugins'
-
 export default (options = {}) => (setup = {}) => {
+  const entryObj = {}
+
   if (process.env.NODE_ENV === 'development') {
-    const entryObj = {}
     Object.keys(setup.options.entry).forEach((key) => {
       entryObj[key] = [
         'react-hot-loader/patch',
+        'webpack-dev-server/client?http://localhost:8080',
         ...setup.options.entry[key]
       ]
     })
 
-    console.log('entryObj', entryObj)
-    entry(entryObj)(setup)
+    setup.options.entry = entryObj
   }
 
   return setup

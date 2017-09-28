@@ -12,6 +12,7 @@ import extractCssPlugin from './extractCss'
 import commonsChunkPlugin from './commonsChunk'
 import htmlPlugin from './html'
 import filePlugin from './file'
+import devServerPlugin from './devServer'
 
 export const babel = babelPlugin
 export const entry = entryPlugin
@@ -27,3 +28,4 @@ export const extractCss = extractCssPlugin
 export const commonsChunk = commonsChunkPlugin
 export const html = htmlPlugin
 export const file = filePlugin
+export const devServer = devServerPlugin

@@ -10,9 +10,6 @@ const defaultBabel = (options = {}) => rule({
 })
 
 export default (options = {}) => (setup = {}) => {
-  const gen = defaultBabel(options)
-  const babelOptions = gen(setup)
-
-  setup.options = setup.modules.merge(setup.options, babelOptions)
+  defaultBabel(options)(setup)
   return setup
 }
