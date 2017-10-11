@@ -2,7 +2,7 @@
 import plugins from '../plugins'
 import rule from '../module/rules'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
-import happyPack from '../module/happypack'
+import happyPack from '../happypack'
 
 const getDefault = (options = {}, resolvePath, extractCSS) => rule({
   test: /\.scss$/,

@@ -13,6 +13,10 @@ export default (options = {}) => (setup = {}) => {
       VERSION: require(resolvePath('package.json')).version,
       ...options
     }),
+    new webpack.optimize.LimitChunkCountPlugin({
+      maxChunks: 5, // Must be greater than or equal to one
+      minChunkSize: 1000
+    }),
     new webpack.CommonsChunkPlugin({
       name: 'manifest',
       minChunks: Infinity

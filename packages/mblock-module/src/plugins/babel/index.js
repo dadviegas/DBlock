@@ -1,6 +1,6 @@
 import rule from '../module/rules'
 import plugins from '../plugins'
-import happyPack from '../module/happypack'
+import happyPack from '../happypack'
 
 const defaultBabel = (options = {}) => rule({
   test: /\.js$/,
