@@ -6,7 +6,11 @@ const defaultBabel = (options = {}) => rule({
   test: /\.js$/,
   exclude: /node_modules\/(?!(([^\/]+?\/){1,2}(src|es6|es)))/,
   use: {
-    loader: 'happypack/loader?id=jsx'
+    loader: 'happypack/loader?id=jsx',
+    options: {
+      optional: 'runtime',
+      cacheDirectory: './webpack_cache/'
+    }
   },
   ...options
 })

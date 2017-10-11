@@ -14,7 +14,7 @@ export default (options = {}) => (setup = {}) => {
       ...options
     }),
     new webpack.CommonsChunkPlugin({
-      name: "manifest",
+      name: 'manifest',
       minChunks: Infinity
     })
   ]

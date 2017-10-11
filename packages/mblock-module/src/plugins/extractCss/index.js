@@ -2,6 +2,7 @@
 import plugins from '../plugins'
 import rule from '../module/rules'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import happyPack from '../module/happypack'
 
 const getDefault = (options = {}, resolvePath, extractCSS) => rule({
   test: /\.scss$/,
@@ -9,9 +10,9 @@ const getDefault = (options = {}, resolvePath, extractCSS) => rule({
   use: process.env.NODE_ENV === 'production'
     ? extractCSS.extract({
       fallback: 'style-loader',
-      use: ['css-loader', 'sass-loader']
+      use: 'happypack/loader?id=style'
     })
-    : ['style-loader', 'css-loader', 'sass-loader']
+    : 'happypack/loader?id=style'
 })
 
 export default (options = {}) => (setup = {}) => {
@@ -22,6 +23,13 @@ export default (options = {}) => (setup = {}) => {
   ]
 
   plugins(...pluginsList)(setup)
+
+  plugins([happyPack({
+    id: 'style',
+    loaders: process.env.NODE_ENV === 'development'
+      ? ['style-loader', 'css-loader', 'sass-loader']
+      : ['css-loader', 'sass-loader']
+  })])(setup)
 
   getDefault(options, resolvePath, extractCSS)(setup)
 
