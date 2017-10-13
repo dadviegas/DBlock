@@ -1,6 +1,6 @@
 {
   "name": "mblock-webpack",
-  "version": "0.1.44",
+  "version": "0.1.45",
   "description": "webpack builder",
   "main": "./lib/index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "case-sensitive-paths-webpack-plugin": "^2.1.1",
     "happypack": "^4.0.0",
     "html-webpack-plugin": "^2.30.1",
-    "mblock-utils": "^0.1.4",
+    "mblock-utils": "^0.1.5",
     "os": "^0.1.1",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
