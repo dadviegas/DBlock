@@ -36,4 +36,3 @@ export const file = filePlugin
 export const devServer = devServerPlugin
 export const dllCreate = dllCreatePlugin
 export const dllReference = dllReferencePlugin
-export const base = basePlugin
