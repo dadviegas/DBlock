@@ -3,10 +3,11 @@ import setting from './setting'
 import modules from './modules'
 import plugins from './plugins'
 import configurationSetup from './configuration'
+import {BundleAnalyzerPlugin} from 'webpack-bundle-analyzer'
 
 const isProduction = process.env.NODE_ENV === 'production'
 
-const baseWebpackOption = {
+const baseWebpackOption = (options = {}) => ({
   devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
   output: {
     pathinfo: !isProduction
@@ -15,11 +16,12 @@ const baseWebpackOption = {
   module: {
     rules: []
   },
+  plugins: options && options.analyzer ? [new BundleAnalyzerPlugin()] : [],
   stats: 'normal'
-}
+})
 
-export const setupBuild = (options) => ({
-  options: baseWebpackOption,
+export const setupBuild = (options = {}) => ({
+  options: baseWebpackOption(options),
   configuration: configurationSetup(options),
   modules,
   plugins
@@ -39,7 +41,7 @@ export const configuration = (options = {}) => {
 
 export const use = (...obj) => Array.prototype.push.apply(pluginsList, obj)
 
-export const build = (options) => {
+export const build = (options = {}) => {
   configurationOptions && pluginsList.push(configurationOptions)
   pluginsList.unshift(getWebpackConfiguration)
   return compose(...pluginsList, setupBuild)(options)

@@ -1,7 +1,7 @@
 export default (options = {}) => {
-  const setup = options.env || {}
   return {
-    NODE_ENV: 'development',
-    ...setup
+    isProduction: process.env.NODE_ENV === 'production',
+    isDevelopment: process.env.NODE_ENV === 'development',
+    ...options
   }
 }

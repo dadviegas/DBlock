@@ -17,19 +17,22 @@ const getDefault = (options = {}, resolvePath, extractCSS) => rule({
 
 export default (options = {}) => (setup = {}) => {
   const {resolvePath} = setup.modules
+  const environment = process.env.NODE_ENV
   const extractCSS = new ExtractTextPlugin(options)
   const pluginsList = [
     extractCSS
   ]
 
-  plugins(...pluginsList)(setup)
+  if (environment === 'production') {
+    plugins(...pluginsList)(setup)
+  }
 
-  plugins([happyPack({
+  plugins(happyPack({
     id: 'style',
     loaders: process.env.NODE_ENV === 'development'
       ? ['style-loader', 'css-loader', 'sass-loader']
       : ['css-loader', 'sass-loader']
-  })])(setup)
+  }))(setup)
 
   getDefault(options, resolvePath, extractCSS)(setup)
 

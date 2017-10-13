@@ -14,6 +14,10 @@ import htmlPlugin from './html'
 import filePlugin from './file'
 import devServerPlugin from './devServer'
 
+import dllCreatePlugin from './dll/create'
+import dllReferencePlugin from './dll/reference'
+import basePlugin from './base'
+
 export const babel = babelPlugin
 export const entry = entryPlugin
 export const output = outputPlugin
@@ -21,6 +25,7 @@ export const module = modulePlugin
 export const alias = aliasPlugin
 export const enviromnent = enviromnentPlugin
 export const resolve = resolvePlugin
+export const base = basePlugin
 export const moduleRules = moduleRule
 
 export const uglify = uglifyPlugin
@@ -29,3 +34,6 @@ export const commonsChunk = commonsChunkPlugin
 export const html = htmlPlugin
 export const file = filePlugin
 export const devServer = devServerPlugin
+export const dllCreate = dllCreatePlugin
+export const dllReference = dllReferencePlugin
+export const base = basePlugin
