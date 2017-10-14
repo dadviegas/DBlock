@@ -1,8 +1,8 @@
 {
   "name": "mblock-react",
-  "version": "0.0.63",
+  "version": "0.0.64",
   "description": "module to handle react builds",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "compile": "babel -d lib/ src/",
     "start": "babel -d lib/ src/ -w",
