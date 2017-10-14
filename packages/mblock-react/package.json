@@ -1,6 +1,6 @@
 {
   "name": "mblock-react",
-  "version": "0.0.60",
+  "version": "0.0.61",
   "description": "module to handle react builds",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "babel-preset-react": "^6.24.1",
-    "mblock-module": "^0.1.61",
+    "mblock-module": "^0.1.62",
     "prop-types": "^15.6.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -22,5 +22,10 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^4.0.8"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   }
 }
