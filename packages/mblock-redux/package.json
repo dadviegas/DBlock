@@ -1,6 +1,6 @@
 {
   "name": "mblock-redux",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "module to handle redux build",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,12 @@
   "author": "dadviegas",
   "license": "ISC",
   "dependencies": {
-    "react-redux": "^5.0.6"
+    "history": "^4.7.2",
+    "immutable": "^3.8.2",
+    "react-redux": "^5.0.6",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1"
   }
 }
