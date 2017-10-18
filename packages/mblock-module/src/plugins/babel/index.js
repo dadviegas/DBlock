@@ -3,7 +3,7 @@ import plugins from '../plugins'
 import happyPack from '../happypack'
 
 const defaultBabel = (options = {}) => rule({
-  test: /\.js$/,
+  test: /\.js|jsx$/,
   exclude: /node_modules\/(?!(([^\/]+?\/){1,2}(src|es6|es)))/,
   use: {
     loader: 'happypack/loader?id=jsx'
