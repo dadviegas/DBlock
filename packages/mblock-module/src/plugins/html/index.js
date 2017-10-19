@@ -7,6 +7,13 @@ export default (options = {}) => (setup = {}) => {
 
   const pluginsList = [
     new HtmlWebpackPlugin({
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true
+      },
       production: isProduction,
       inject: true,
       ...options

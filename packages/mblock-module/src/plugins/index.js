@@ -17,7 +17,9 @@ import devServerPlugin from './devServer'
 import dllCreatePlugin from './dll/create'
 import dllReferencePlugin from './dll/reference'
 import basePlugin from './base'
+import compressionPlugin from './compression'
 
+export const compression = compressionPlugin
 export const babel = babelPlugin
 export const entry = entryPlugin
 export const output = outputPlugin
