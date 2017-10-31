@@ -1,6 +1,6 @@
 {
   "name": "mblock-components",
-  "version": "0.0.84",
+  "version": "0.0.85",
   "description": "module to handle react builds",
   "main": "./dist/index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "markdown-it": "^8.4.0",
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-fontawesome": "^0.2.0",
-    "mblock-react": "^0.0.84"
+    "mblock-react": "^0.0.85"
   },
   "babel": {
     "presets": [
