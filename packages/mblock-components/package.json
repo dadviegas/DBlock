@@ -1,0 +1,35 @@
+{
+  "name": "mblock-components",
+  "version": "0.0.79",
+  "description": "module to handle react builds",
+  "main": "./dist/index.js",
+  "scripts": {
+    "compile": "babel -d dist/ src/",
+    "start": "babel -d lib/ src/ -w",
+    "exec": "clear && npm run compile && node lib",
+    "clean-lib": "rimraf ./dist",
+    "build:run": "webpack",
+    "build:development": "cross-env NODE_ENV=development npm run build:run",
+    "build": "cross-env NODE_ENV=production npm run build:run"
+  },
+  "author": "dadviegas",
+  "license": "ISC",
+  "dependencies": {
+    "markdown-it": "^8.4.0",
+    "markdown-it-anchor": "^4.0.0",
+    "markdown-it-attrs": "^1.2.0",
+    "markdown-it-center-text": "^1.0.3",
+    "markdown-it-checkbox": "^1.1.0",
+    "markdown-it-emoji": "^1.4.0",
+    "markdown-it-fontawesome": "^0.2.0",
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-highlightjs": "^3.0.0",
+    "markdown-it-mermaid": "^0.1.8",
+    "mblock-react": "^0.0.79"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}

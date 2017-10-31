@@ -3,6 +3,7 @@ import plugins from '../plugins'
 
 export default (options = {}) => (setup = {}) => {
   const {webpack, resolvePath} = setup.modules
+
   const environment = process.env.NODE_ENV
   const pluginsList = [
     new webpack.NoEmitOnErrorsPlugin(),

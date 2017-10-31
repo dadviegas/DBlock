@@ -4,7 +4,7 @@ import happyPack from '../happypack'
 
 const defaultBabel = (options = {}) => rule({
   test: /\.js|jsx$/,
-  exclude: /node_modules\/(?!(([^\/]+?\/){1,2}(src|es6|es)))/,
+  exclude: /node_modules/,
   use: {
     loader: 'happypack/loader?id=jsx'
   },

@@ -4,9 +4,9 @@ import rule from '../module/rules'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import happyPack from '../happypack'
 
-const getDefault = (options = {}, resolvePath, extractCSS) => rule({
+const getDefault = (resolvePath, extractCSS) => rule({
   test: /\.scss$/,
-  include: resolvePath('./src'),
+  include: resolvePath('src'),
   use: process.env.NODE_ENV === 'production'
     ? extractCSS.extract({
       fallback: 'style-loader',
@@ -19,22 +19,19 @@ export default (options = {}) => (setup = {}) => {
   const {resolvePath} = setup.modules
   const environment = process.env.NODE_ENV
   const extractCSS = new ExtractTextPlugin(options)
-  const pluginsList = [
-    extractCSS
-  ]
 
   if (environment === 'production') {
-    plugins(...pluginsList)(setup)
+    plugins(extractCSS)(setup)
   }
 
   plugins(happyPack({
     id: 'style',
     loaders: process.env.NODE_ENV === 'development'
       ? ['style-loader', 'css-loader', 'sass-loader']
-      : ['css-loader', 'sass-loader']
+      : ['css-loader?-minimize', 'sass-loader']
   }))(setup)
 
-  getDefault(options, resolvePath, extractCSS)(setup)
+  getDefault(resolvePath, extractCSS)(setup)
 
   return setup
 }
