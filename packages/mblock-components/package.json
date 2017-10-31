@@ -1,6 +1,6 @@
 {
   "name": "mblock-components",
-  "version": "0.0.81",
+  "version": "0.0.82",
   "description": "module to handle react builds",
   "main": "./dist/index.js",
   "scripts": {
@@ -15,6 +15,7 @@
   "author": "dadviegas",
   "license": "ISC",
   "dependencies": {
+    "highlightjs": "^9.10.0",
     "markdown-it": "^8.4.0",
     "markdown-it-anchor": "^4.0.0",
     "markdown-it-attrs": "^1.2.0",
@@ -25,7 +26,7 @@
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-highlightjs": "^3.0.0",
     "markdown-it-mermaid": "^0.1.8",
-    "mblock-react": "^0.0.81"
+    "mblock-react": "^0.0.82"
   },
   "babel": {
     "presets": [
