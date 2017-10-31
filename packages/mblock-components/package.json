@@ -1,6 +1,6 @@
 {
   "name": "mblock-components",
-  "version": "0.0.82",
+  "version": "0.0.83",
   "description": "module to handle react builds",
   "main": "./dist/index.js",
   "scripts": {
@@ -26,7 +26,7 @@
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-highlightjs": "^3.0.0",
     "markdown-it-mermaid": "^0.1.8",
-    "mblock-react": "^0.0.82"
+    "mblock-react": "^0.0.83"
   },
   "babel": {
     "presets": [
