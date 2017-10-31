@@ -1,6 +1,6 @@
 {
   "name": "mblock-react",
-  "version": "0.0.78",
+  "version": "0.0.79",
   "description": "module to handle react builds",
   "main": "./lib/index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "babel-preset-react": "^6.24.1",
-    "mblock-module": "^0.1.76",
+    "mblock-module": "^0.1.77",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
