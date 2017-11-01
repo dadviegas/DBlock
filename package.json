@@ -14,7 +14,12 @@
     "bootstrap:hoist": "lerna bootstrap --hoist",
     "clean": "lerna clean && rm -rf node_modules",
     "clean:packages": "lerna clean && rm -rf node_modules",
-    "publish": "npm run build && lerna publish"
+    "publish": "npm run build && lerna publish",
+    "start:dynamic": "lerna exec --scope mblock-dynamic-react -- npm run start",
+    "start:play": "lerna exec --scope mblock-play-react -- npm run start",
+    "start:react:redux": "lerna exec --scope mblock-play-react -- npm run start",
+    "start:blog": "lerna exec --scope mblock-blog -- npm run start",
+    "start:site": "lerna exec --scope mblock-site -- npm run start"
   },
   "repository": {
     "type": "git",
@@ -30,6 +35,9 @@
   },
   "homepage": "https://github.com/dadviegas/mBlock#readme",
   "dependencies": {
-    "lerna": "^2.2.0"
+    "lerna": "^2.2.0",
+    "less-loader": "^4.0.5",
+    "postcss-loader": "^2.0.8",
+    "util": "^0.10.3"
   }
 }

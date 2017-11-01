@@ -1,0 +1,43 @@
+{
+  "name": "mblock-site",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "clean-lib": "rimraf ./dist ./dll",
+    "prebuild:production": "npm run clean-lib && npm run vendor:production",
+    "build": "webpack",
+    "build:development": "cross-env NODE_ENV=development npm run build",
+    "build:production": "cross-env NODE_ENV=production npm run build",
+    "build:production:analyzer": "cross-env NODE_ENV=production npm run build -- --env.analyzer=true",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --hot --history-api-fallback --open",
+    "vendor:development": "cross-env NODE_ENV=development webpack --config webpack.config.vendor.babel.js",
+    "vendor:production": "cross-env NODE_ENV=production webpack --config webpack.config.vendor.babel.js",
+    "http-server": "http-server ./dist",
+    "postinstall": "npm run clean-lib && npm run vendor:production"
+  },
+  "author": "dadviegas",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-import": "^1.6.2",
+    "mblock-react": "0.0.72",
+    "mblock-redux": "0.0.3"
+  },
+  "dependencies": {
+    "antd": "^2.13.8",
+    "highlight": "^0.2.4",
+    "markdown-it": "^8.4.0",
+    "markdown-it-attrs": "^1.2.0",
+    "markdown-it-center-text": "^1.0.3",
+    "markdown-it-mermaid": "^0.1.8",
+    "markdown-it-task-lists": "^2.1.0",
+    "markdown-loader": "^2.0.1",
+    "moment": "^2.19.1",
+    "react-markdown": "^2.5.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}

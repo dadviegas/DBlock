@@ -3445,24 +3445,24 @@ mblock-babel@^0.1.4:
     babel-preset-env "^1.6.0"
     babel-preset-stage-0 "^6.24.1"
 
-mblock-module@^0.1.77:
-  version "0.1.77"
-  resolved "https://registry.yarnpkg.com/mblock-module/-/mblock-module-0.1.77.tgz#5cc7e5347055d61d8981ed7c3fcd620f85adae55"
+mblock-module@^0.1.79:
+  version "0.1.79"
+  resolved "https://registry.yarnpkg.com/mblock-module/-/mblock-module-0.1.79.tgz#ec220fed9d8ecb19bf619b6b54b78d7977ce2a63"
   dependencies:
     css-loader "0.28.7"
     extract-text-webpack-plugin "^3.0.0"
     file-loader "^1.1.5"
-    mblock-webpack "^0.1.62"
+    mblock-webpack "^0.1.63"
     node-sass "4.5.3"
     sass-loader "6.0.6"
     style-loader "0.19.0"
 
-mblock-react@^0.0.79:
-  version "0.0.79"
-  resolved "https://registry.yarnpkg.com/mblock-react/-/mblock-react-0.0.79.tgz#a6945bbbbfca29ba3e2a6ca1e01bc2ebbdf1f10c"
+mblock-react@^0.0.81:
+  version "0.0.81"
+  resolved "https://registry.yarnpkg.com/mblock-react/-/mblock-react-0.0.81.tgz#d1747a12612aaa7728cdd68bfe46b9f9330e3cc5"
   dependencies:
     babel-preset-react "^6.24.1"
-    mblock-module "^0.1.77"
+    mblock-module "^0.1.79"
     prop-types "^15.6.0"
     react "^16.0.0"
     react-dom "^16.0.0"
@@ -3482,9 +3482,9 @@ mblock-utils@^0.1.6:
     rimraf "^2.6.2"
     scripty "^1.7.2"
 
-mblock-webpack@^0.1.62:
-  version "0.1.62"
-  resolved "https://registry.yarnpkg.com/mblock-webpack/-/mblock-webpack-0.1.62.tgz#adf87c32102e30b4f6f9a2e6ef343e01afa55ba0"
+mblock-webpack@^0.1.63:
+  version "0.1.63"
+  resolved "https://registry.yarnpkg.com/mblock-webpack/-/mblock-webpack-0.1.63.tgz#ab38060f88e1bd6527e4bf029ea8a78d41e41559"
   dependencies:
     babel-loader "^7.1.2"
     babel-minify-webpack-plugin "^0.2.0"

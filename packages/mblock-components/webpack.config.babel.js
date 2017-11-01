@@ -1,4 +1,4 @@
-import { join } from 'path'
+import { join, resolve as resolvePath } from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import { use, build } from 'mblock-module'
 import { hotReload } from 'mblock-react/plugins'
@@ -14,14 +14,15 @@ import {
   file,
   uglify
 } from 'mblock-module/plugins'
-import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import webpack from 'webpack'
 
 const sourcePath = join(__dirname, 'src')
 const outputPath = join(__dirname, 'dist')
 
 use(
-  babel(),
-  hotReload(),
+  babel({
+    include: sourcePath // /markdown-it-mermaid|markdown-it-highlightjs|markdown-it-footnote|markdown-it-anchor|markdown-it-attrs|markdown-it-checkbox|markdown-it-emoji|markdown-it-fontawesome|markdown-it-center-text/
+  }),
   entry({
     index: [
       './index.js'
@@ -31,24 +32,19 @@ use(
     path: outputPath,
     chunkFilename: '[id].chunk.js',
     filename: `index.js`,
-    publicPath: '/',
-    library: 'umd'
+    publicPath: '/'
   }),
+  extractCss({ filename: 'style.css' }),
   enviromnent(),
-  resolve({ mainFields: [ 'main' ] }),
-  file(),
+  resolve({
+    mainFields: [ 'main' ]
+  }),
   uglify(),
   base({
     devtool: 'none',
     context: sourcePath,
-    module: [
-      {
-        test: /\.md$/,
-        use: 'raw-loader'
-      }
-    ]
+    stats: 'verbose'
   })
 )
 
 export default build
-

@@ -5,7 +5,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import happyPack from '../happypack'
 
 const getDefault = (resolvePath, extractCSS) => rule({
-  test: /\.scss$/,
+  test: /\.(scss|css)$/,
   include: resolvePath('src'),
   use: process.env.NODE_ENV === 'production'
     ? extractCSS.extract({
