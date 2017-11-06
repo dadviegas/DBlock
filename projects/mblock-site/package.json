@@ -31,9 +31,7 @@
     "markdown-it-center-text": "^1.0.3",
     "markdown-it-mermaid": "^0.1.8",
     "markdown-it-task-lists": "^2.1.0",
-    "markdown-loader": "^2.0.1",
-    "moment": "^2.19.1",
-    "react-markdown": "^2.5.0"
+    "moment": "^2.19.1"
   },
   "babel": {
     "presets": [

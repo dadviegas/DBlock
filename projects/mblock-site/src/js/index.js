@@ -5,7 +5,7 @@ import createHistory from 'history/createHashHistory';
 import { syncHistoryWithStore } from 'react-router-redux';
 import render from 'mblock-react'
 
-import routes from './App';
+import routes from './Routes';
 import Root from './Root';
 import configureStore from './redux/configureStore';
 

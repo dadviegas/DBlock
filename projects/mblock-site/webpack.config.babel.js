@@ -40,7 +40,9 @@ use(
     publicPath: '/'
   }),
   enviromnent(),
-  resolve({ mainFields: [ 'browser', 'style', 'main' ] }),
+  resolve({
+    mainFields: [ 'browser', 'style', 'main' ]
+  }),
   extractCss({ filename: 'style.css' }),
   file(),
   uglify(),

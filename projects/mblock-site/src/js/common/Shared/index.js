@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, Breadcrumb, Icon } from 'antd'
+import { Layout, Icon } from 'antd'
 import MenuRouter from '../app/Menu'
 
 const { Header, Content, Footer, Sider } = Layout
@@ -9,8 +9,8 @@ const CONTENT_WIDTH_NOT_COLLAPSED = 205
 
 class Home extends React.Component {
   state = {
-    collapsed: true,
-    contentWidth: CONTENT_WIDTH_COLLAPSED
+    collapsed: false,
+    contentWidth: CONTENT_WIDTH_NOT_COLLAPSED
   }
 
   onCollapse = (collapsed) => {
@@ -26,28 +26,15 @@ class Home extends React.Component {
           onCollapse={this.onCollapse}
         >
           <div className="logo" > Logo </div>
-          <MenuRouter />
+          <MenuRouter collapsed={this.state.collapsed} />
         </Sider>
         <Layout style={{ background: '#fff', padding: 10, marginLeft: this.state.contentWidth }}>
-          <Header style={{ background: '#fff', padding: 0 }}>
-            <Breadcrumb>
-              <Breadcrumb.Item href="">
-                <Icon type="home" />
-              </Breadcrumb.Item>
-              <Breadcrumb.Item href="">
-                <Icon type="user" />
-                <span>Application List</span>
-              </Breadcrumb.Item>
-              <Breadcrumb.Item>
-                Application
-              </Breadcrumb.Item>
-            </Breadcrumb>
-          </Header>
+
           <Content style={{ background: '#fff', margin: 8 }}>
             {this.props.children}
           </Content>
           <Footer style={{ textAlign: 'center' }}>
-            Mblock ©2017 Created by Dad Viegas
+            DAD Viegas ©2017 Created by David Viegas
           </Footer>
         </Layout>
       </Layout>
@@ -56,3 +43,5 @@ class Home extends React.Component {
 }
 
 export default Home
+
+// < Header style= {{ background: '#fff', padding: 0 }}></Header>
