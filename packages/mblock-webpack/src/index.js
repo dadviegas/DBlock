@@ -10,6 +10,7 @@ const isProduction = process.env.NODE_ENV === 'production'
 const baseWebpackOption = (options = {}) => ({
   devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
   output: {
+    // Tell webpack to include comments in bundles with information about the contained modules.
     pathinfo: !isProduction
   },
   resolve: { },

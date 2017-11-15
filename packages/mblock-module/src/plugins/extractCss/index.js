@@ -6,7 +6,7 @@ import happyPack from '../happypack'
 
 const getDefault = (resolvePath, extractCSS) => rule({
   test: /\.(scss|css)$/,
-  include: resolvePath('src'),
+  include: [resolvePath('src'), resolvePath('node_modules')],
   use: process.env.NODE_ENV === 'production'
     ? extractCSS.extract({
       fallback: 'style-loader',
@@ -28,7 +28,7 @@ export default (options = {}) => (setup = {}) => {
     id: 'style',
     loaders: process.env.NODE_ENV === 'development'
       ? ['style-loader', 'css-loader', 'sass-loader']
-      : ['css-loader?-minimize', 'sass-loader']
+      : ['css-loader', 'sass-loader']
   }))(setup)
 
   getDefault(resolvePath, extractCSS)(setup)

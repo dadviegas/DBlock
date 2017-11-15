@@ -8,11 +8,11 @@ export default (options = {}) => (setup = {}) => {
 
   if (environment === 'production') {
     pluginsList.push(new webpack.optimize.UglifyJsPlugin({
+      test: /\.js($|\?)/i,
+      sourceMap: true,
       uglifyOptions: {
-        ie8: false,
-        mangle: true
-      },
-      ...options
+        compress: true
+      }
     }))
   }
 

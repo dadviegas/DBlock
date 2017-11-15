@@ -11,7 +11,6 @@ import configureStore from './redux/configureStore';
 
 import '../style/general.scss'
 
-
 let initialState = {};
 
 // rehydrate initialState for JS app

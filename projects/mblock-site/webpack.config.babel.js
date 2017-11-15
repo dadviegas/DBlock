@@ -43,9 +43,8 @@ use(
   resolve({
     mainFields: [ 'browser', 'style', 'main' ]
   }),
-  extractCss({ filename: 'style.css' }),
   file(),
-  uglify(),
+  // uglify(),
   html({
     title: 'React Boilerplate',
     template: join(__dirname, 'src', 'assets', 'index.ejs')
@@ -60,18 +59,25 @@ use(
       rules: [
         {
           test: /\.md$/,
-          use: 'raw-loader'
+          use: 'file-loader'
         },
+        // {
+        //   test: /antd.*\.css$/,
+        //   use: [
+        //     "style-loader",
+        //     {
+        //       loader: 'css-loader',
+        //       options: { sourceMap: 1 }
+        //     }
+        //   ]
+        // },
         {
-          test: /antd.*\.css$/,
-          use: [
-            "style-loader",
-            {
+          test: /\.(scss|css)$/,
+          use: ['style-loader', {
               loader: 'css-loader',
               options: { sourceMap: 1 }
-            }
-          ]
-        },
+          }, 'sass-loader']
+        }
       ]
     },
     devtool: 'none',
