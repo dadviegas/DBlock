@@ -1,20 +1,21 @@
 {
-  "name": "mblock-play-react",
-  "version": "1.0.1",
+  "name": "mblock-react-redux",
+  "version": "2.0.0",
   "description": "",
   "private": true,
   "scripts": {
     "clean-lib": "rimraf ./dist ./dll",
+    "prebuild": "npm run clean-lib && npm run vendor:development",
     "prebuild:production": "npm run clean-lib && npm run vendor:production",
     "build": "webpack",
     "build:development": "cross-env NODE_ENV=development npm run build",
     "build:production": "cross-env NODE_ENV=production npm run build",
     "build:production:analyzer": "cross-env NODE_ENV=production npm run build -- --env.analyzer=true",
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot --history-api-fallback --open",
-    "vendor:develoment": "cross-env NODE_ENV=develoment webpack --config webpack.config.vendor.babel.js",
+    "vendor:development": "cross-env NODE_ENV=development webpack --config webpack.config.vendor.babel.js",
     "vendor:production": "cross-env NODE_ENV=production webpack --config webpack.config.vendor.babel.js",
     "http-server": "http-server ./dist",
-    "postinstall": "npm run clean-lib && npm run vendor:develoment"
+    "postinstall": "npm run clean-lib && npm run vendor:development"
   },
   "author": "dadviegas",
   "license": "ISC",

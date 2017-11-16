@@ -1,10 +1,11 @@
 {
   "name": "mblock-blog",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "",
   "private": true,
   "scripts": {
     "clean-lib": "rimraf ./dist ./dll",
+    "prebuild": "npm run clean-lib && npm run vendor:development",
     "prebuild:production": "npm run clean-lib && npm run vendor:production",
     "build": "webpack",
     "build:development": "cross-env NODE_ENV=development npm run build",
