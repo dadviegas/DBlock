@@ -1,0 +1,21 @@
+{
+  "name": "mblock-es6",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack --env.prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dadviegas",
+  "license": "ISC",
+  "devDependencies": {
+    "mblock-webpack": "^1.0.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}

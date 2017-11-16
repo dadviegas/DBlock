@@ -1,5 +1,5 @@
 import compose from 'mblock-utils/compose'
-import setting from './setting'
+import { default as settingBase } from './setting'
 import modules from './modules'
 import plugins from './plugins'
 import configurationSetup from './configuration'
@@ -47,3 +47,5 @@ export const build = (options = {}) => {
   pluginsList.unshift(getWebpackConfiguration)
   return compose(...pluginsList, setupBuild)(options)
 }
+
+export const setting = settingBase

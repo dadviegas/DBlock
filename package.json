@@ -20,8 +20,8 @@
     "start:react:redux": "lerna exec --scope mblock-play-react -- npm run start",
     "start:blog": "lerna exec --scope mblock-blog -- npm run start",
     "start:site": "lerna exec --scope mblock-site -- npm run start",
-    "site:exec": "lerna exec --scope mblock-site"
-
+    "site:exec": "lerna exec --scope mblock-site",
+    "es6:exec": "lerna exec --scope mblock-es6"
   },
   "repository": {
     "type": "git",
