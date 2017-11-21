@@ -1,6 +1,6 @@
 {
   "name": "mblock-es6",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "private": true,
   "main": "index.js",
@@ -14,12 +14,14 @@
   "author": "dadviegas",
   "license": "ISC",
   "devDependencies": {
-    "mblock-webpack": "^1.0.0"
+    "mblock-webpack": "^1.0.1"
   },
   "babel": {
     "presets": [
       "env"
     ],
-    "plugins": ["transform-object-rest-spread"]
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
   }
 }
