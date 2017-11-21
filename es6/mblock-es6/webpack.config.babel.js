@@ -1,30 +1,23 @@
-import { use, build, setting } from 'mblock-webpack'
+import "./build.setup"
+import { build } from 'mblock-webpack'
 import { join } from 'path'
 
-const sourcePath = join(__dirname, 'src')
-const outputPath = join(__dirname, 'dist')
+const appFolder = (folder) => join(__dirname, folder)
 
-const options1 = {
-  context: sourcePath,
-  entry: {
-    index: ['./index']
+const sourcePath = appFolder('src')
+const outputPath = appFolder('dist')
+
+// function to be called when webpack is called
+// we can pass variables from the command
+export default (env = {}) => {
+  // on the plugins will be available on setup.configuration
+  // example: setup.configuration.outputPath
+  const environment = {
+    ...env,
+    sourcePath,
+    outputPath
   }
+
+  // Generate webpack configuration based on partials
+  return build(environment)
 }
-
-const options2 = {
-  output: {
-    path: outputPath,
-    chunkFilename: '[id].chunk.js',
-    filename: '[name].js',
-    publicPath: '/'
-  }
-}
-
-
-use(setting(options1),
-(setup) => {
-  setup.options = setup.modules.merge(setup.options, options2)
-  return setup
-})
-
-export default build

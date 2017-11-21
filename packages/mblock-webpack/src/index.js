@@ -29,7 +29,9 @@ export const setupBuild = (options = {}) => ({
 })
 
 // return only the webpack configuration
-export const getWebpackConfiguration = setup => setup.options
+export const getWebpackConfiguration = setup => {
+  return setup.options
+}
 export const getConfiguration = setup => setup.configuration
 
 const pluginsList = []
@@ -40,7 +42,9 @@ export const configuration = (options = {}) => {
   configurationOptions = setting(options)
 }
 
-export const use = (...obj) => Array.prototype.push.apply(pluginsList, obj)
+export const use = (...obj) => {
+  Array.prototype.push.apply(pluginsList, obj)
+}
 
 export const build = (options = {}) => {
   configurationOptions && pluginsList.push(configurationOptions)
