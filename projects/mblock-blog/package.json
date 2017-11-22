@@ -1,6 +1,6 @@
 {
   "name": "mblock-blog",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
     "build:development": "cross-env NODE_ENV=development npm run build",
     "build:production": "cross-env NODE_ENV=production npm run build",
     "build:production:analyzer": "cross-env NODE_ENV=production npm run build -- --env.analyzer=true",
-    "start": "cross-env NODE_ENV=development webpack-dev-server --hot --history-api-fallback --open",
+    "start": "cross-env NODE_ENV=production webpack-dev-server --hot --history-api-fallback --open",
     "vendor:development": "cross-env NODE_ENV=development webpack --config webpack.config.vendor.babel.js",
     "vendor:production": "cross-env NODE_ENV=production webpack --config webpack.config.vendor.babel.js",
     "http-server": "http-server ./dist",

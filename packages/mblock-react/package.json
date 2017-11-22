@@ -1,6 +1,6 @@
 {
   "name": "mblock-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "module to handle react builds",
   "main": "./lib/index.js",
   "scripts": {
@@ -14,14 +14,20 @@
   "license": "ISC",
   "dependencies": {
     "babel-preset-react": "^6.24.1",
-    "mblock-module": "^1.0.4",
+    "history": "^4.7.2",
+    "immutable": "^3.8.2",
+    "mblock-webpack": "^1.0.5",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-hot-loader": "^3.0.0-beta.7",
+    "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-router-redux": "^4.0.8"
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1"
   },
   "babel": {
     "presets": [
