@@ -36,7 +36,7 @@ use(
   output({
     path: outputPath,
     chunkFilename: '[id].chunk.js',
-    filename: `[name].${pkg.version}.js`,
+    filename: `[name].js`,
     publicPath: '/'
   }),
   enviromnent(),
@@ -59,18 +59,8 @@ use(
       rules: [
         {
           test: /\.md$/,
-          use: 'file-loader'
+          use: 'raw-loader'
         },
-        // {
-        //   test: /antd.*\.css$/,
-        //   use: [
-        //     "style-loader",
-        //     {
-        //       loader: 'css-loader',
-        //       options: { sourceMap: 1 }
-        //     }
-        //   ]
-        // },
         {
           test: /\.(scss|css)$/,
           use: ['style-loader', {
