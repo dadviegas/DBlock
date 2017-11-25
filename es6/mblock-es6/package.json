@@ -1,6 +1,6 @@
 {
   "name": "mblock-es6",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "",
   "private": true,
   "main": "index.js",
@@ -14,7 +14,7 @@
   "author": "dadviegas",
   "license": "ISC",
   "devDependencies": {
-    "mblock-webpack": "^1.0.5"
+    "mblock-webpack": "^1.0.7"
   },
   "babel": {
     "presets": [

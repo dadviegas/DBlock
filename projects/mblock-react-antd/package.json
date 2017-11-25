@@ -1,0 +1,56 @@
+{
+  "name": "mblock-react-antd",
+  "version": "0.0.2",
+  "description": "Personal",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "compile": "babel -d build/ src/",
+    "build:development": "cross-env NODE_ENV=development webpack",
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --hot --inline",
+    "http-server": "http-server ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dadviegas/dadviegas.github.io.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "dadviegas@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dadviegas/dadviegas.github.io/issues"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "stage-0"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.6.2",
+    "css-loader": "0.28.7",
+    "favicons-webpack-plugin": "0.0.7",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "mblock-react": "^1.0.7",
+    "mblock-webpack": "^1.0.7",
+    "node-sass": "4.5.3",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.19.0"
+  },
+  "dependencies": {
+    "antd": "^2.13.10",
+    "highlight.js": "^9.12.0",
+    "html-loader": "^0.5.1",
+    "markdown-it": "^8.4.0",
+    "markdown-it-attrs": "^1.2.0",
+    "markdown-it-center-text": "^1.0.3",
+    "markdown-it-emoji": "^1.4.0",
+    "markdown-it-fontawesome": "^0.2.0",
+    "markdown-it-mermaid": "^0.1.8",
+    "markdown-it-task-lists": "^2.1.0"
+  }
+}
