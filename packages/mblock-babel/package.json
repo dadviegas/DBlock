@@ -1,6 +1,6 @@
 {
   "name": "mblock-babel",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Babel core for projects",
   "main": "lib/",
   "keywords": [
@@ -12,13 +12,11 @@
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-0": "^6.24.1"
   },
   "author": "dadviegas",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-eslint": "^8.0.3"
-  }
+  "license": "ISC"
 }
