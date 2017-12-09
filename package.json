@@ -40,9 +40,6 @@
   },
   "homepage": "https://github.com/dadviegas/mBlock#readme",
   "dependencies": {
-    "lerna": "^2.2.0",
-    "less-loader": "^4.0.5",
-    "postcss-loader": "^2.0.8",
-    "util": "^0.10.3"
+    "lerna": "^2.2.0"
   }
 }
