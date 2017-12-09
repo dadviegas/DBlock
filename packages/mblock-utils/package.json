@@ -1,6 +1,6 @@
 {
   "name": "mblock-utils",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Utils for projects",
   "keywords": [
     "compose",
@@ -15,8 +15,9 @@
     "colors": "^1.1.2",
     "cross-env": "^5.0.5",
     "http-server": "^0.10.0",
-    "mblock-babel": "^0.1.4",
-    "rimraf": "^2.6.2"
+    "mblock-babel": "^0.1.5",
+    "rimraf": "^2.6.2",
+    "standard": "^10.0.3"
   },
   "author": "dadviegas",
   "license": "ISC",
