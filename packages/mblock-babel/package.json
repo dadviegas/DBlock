@@ -1,6 +1,6 @@
 {
   "name": "mblock-babel",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Babel core for projects",
   "main": "lib/",
   "keywords": [
@@ -13,6 +13,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-0": "^6.24.1"
