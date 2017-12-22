@@ -1,6 +1,6 @@
 {
   "name": "mblock-react",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "module to handle react builds",
   "main": "./lib/index.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "mblock-webpack": "^1.1.5",
     "node-sass": "^4.7.2",
     "postcss-loader": "^2.0.9",
+    "precss": "^2.0.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
