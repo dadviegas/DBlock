@@ -1,9 +1,9 @@
 import compose from 'mblock-utils/compose'
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 import { default as settingBase } from './setting'
 import modules from './modules'
 import plugins from './plugins'
 import configurationSetup from './configuration'
-import {BundleAnalyzerPlugin} from 'webpack-bundle-analyzer'
 
 const isProduction = process.env.NODE_ENV === 'production'
 
